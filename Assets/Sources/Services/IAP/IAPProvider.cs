@@ -54,14 +54,14 @@ namespace Sources.Services.IAP
 
             Initialized?.Invoke();
             
-            Debug.Log("AIP Initialized");
+            Debug.Log("IAP Initialized");
         }
 
         public void OnInitializeFailed(InitializationFailureReason error) => 
-            Debug.Log($"AIP Initialize failed: {error}");
+            Debug.Log($"IAP Initialize failed: {error}");
 
         public void OnInitializeFailed(InitializationFailureReason error, string message) => 
-            Debug.Log($"AIP Initialize failed: {error}\n{message}");
+            Debug.Log($"IAP Initialize failed: {error}\n{message}");
 
         public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs purchaseEvent)
         {

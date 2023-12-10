@@ -44,7 +44,7 @@ namespace Sources.UI.Windows.Shop
 
                 if(!isOpened)
                     itemInstance.CloseItem(_items[i].LevelRequired);
-                else if(isPurchased)
+                if(isPurchased)
                     itemInstance.Purchased();
                 
                 itemInstance.BuyButtonClicked += OnBuyButtonClicked;
@@ -61,7 +61,9 @@ namespace Sources.UI.Windows.Shop
             
             data.AddTickets(-_items[id].Tickets);
             OnPurchased(id);
-
+            
+            ProgressService.SaveProgress();
+            
             ShopItem shopItem = _shopItems.FirstOrDefault(x => x.ID == id);
             shopItem.Purchased();
         }
