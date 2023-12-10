@@ -1,0 +1,22 @@
+{
+	"Configs": [
+	    {
+	        "Id": "tickets500",
+	        "ProductType": 0,
+	        "ItemType": 1,
+	        "Name": "Epic chest",
+	        "Quantity": "500",
+	        "Price": "1.99 $",
+	        "Icon": ""
+	    },
+        {
+	        "Id": "tickets1200",
+	        "ProductType": 0,
+	        "ItemType": 1,
+	        "Name": "Lucky chest",
+	        "Quantity": "1200",
+	        "Price": "4.99 $",
+	        "Icon": ""
+	    }
+    ]
+}
